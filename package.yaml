@@ -1,0 +1,30 @@
+name:                hello
+version:             0.0.0.1
+license:             BSD3
+author:              Chris Dornan
+maintainer:          chris@chrisdornan.com
+copyright:           2020 Chris Dornan
+
+synopsis:            hello
+category:            Web
+
+description:         hello world
+
+dependencies:
+- base >= 4.10 && < 10
+
+ghc-options:
+- -Wall
+- -Wcompat
+- -Wincomplete-record-updates
+- -Wincomplete-uni-patterns
+- -Wredundant-constraints
+
+executables:
+  hello:
+    main:                hello.hs
+    source-dirs:         .
+    ghc-options:
+    # - -with-rtsopts "-T -N -qg -qb -H2048m -I0"
+    - -rtsopts
+    - -threaded

@@ -1,0 +1,29 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 7322007c27d43a6254625c3fd18e19fb3a0a2d12c308b5c30b14d15d3ae3542d
+
+name:           hello
+version:        0.0.0.1
+synopsis:       hello
+description:    hello world
+category:       Web
+author:         Chris Dornan
+maintainer:     chris@chrisdornan.com
+copyright:      2020 Chris Dornan
+license:        BSD3
+build-type:     Simple
+
+executable hello
+  main-is: hello.hs
+  other-modules:
+      Paths_hello
+  hs-source-dirs:
+      ./.
+  ghc-options: -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints -rtsopts -threaded
+  build-depends:
+      base >=4.10 && <10
+  default-language: Haskell2010
